@@ -83,10 +83,10 @@ public class MainActivity extends AppCompatActivity {
     });
   }
 
-  private TextView createTableCell(int label) {
-    TextView textView = new TextView(this);
-    textView.setText(Integer.toString(label));
-    textView.setBackgroundResource(R.color.colorPrimary);
-    return textView;
+  private TableCell createTableCell(int label) {
+    TableCell tableCell = new TableCell(this);
+    tableCell.setText(Integer.toString(label));
+    tableCell.setBackgroundResource(R.color.colorPrimary);
+    return tableCell;
   }
 }
